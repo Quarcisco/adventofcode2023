@@ -36,7 +36,6 @@ with open("input.txt") as file_contents:
     for line in file_contents:
         clean_str = ''
 
-        # finding first number
         for index in range(len(line)):
             char = line[index]
             if char.isdigit(): 
