@@ -42,8 +42,7 @@ with open("input.txt") as file_contents:
         line = line.translate(translator).split()
                 
         for index in range(len(line)):
-            if line[index] in max_balls:
-                if int(line[index-1]) > max_balls[line[index]]:
+            if line[index] in max_balls and int(line[index-1]) > max_balls[line[index]]:
                     break
         else:
             final_sum += int(line[1]) # we know the game id is always index 1
